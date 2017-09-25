@@ -1,36 +1,22 @@
 #include <iostream>
 using namespace std;
 
-int main() {
-    int a, b, c;
-    char op;
+int main(){
+    int a, b;
+	char op[2];
 
-    cin >> a >> op >> b;
+	cin >> a >> op >> b;
 
-    switch (op) {
-        case '+':  cout <<a+b;
-            break;
-        case '-': cout <<a-b;
-            break;
-        case '*':  cout <<a*b;
-            break;
-        case '/': cout <<(double)a / b;
-            break;
-        case '%':  cout << a % b;
-            break;
-        case '&':   cout  <<(a&b);
-            break;
-        case '|':   cout  <<(a|b);
-            break;
-        case '^':   cout  <<(a^b);
-            break;
-        case '<':  c=a<<b;
-                    cout  <<c;
-            break;
-        case '>': cout <<(a>>b);
-            break;
-        default: cout<<"ERROR!";
-
-        }
+	if (op[0] == '+') cout << a + b;
+	if (op[0] == '-') cout << a - b;
+	if (op[0] == '*') cout << a * b;
+	if (op[0] == '/') cout << (double)a / b;
+	if (op[0] == '%') cout << a % b;
+	if (op[0] == '&') cout << (a & b);
+	if (op[0] == '|') cout << (a | b);
+	if (op[0] == '^') cout << (a ^ b);
+    if (op[0] == '<' && op[1] == '<') cout << (a << b);
+	if (op[0] == '>' && op[1] == '>') cout << (a >> b);
+    
     return 0;
 }
