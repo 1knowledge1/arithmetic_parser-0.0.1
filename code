@@ -15,7 +15,7 @@ int main(){
 	if (op[0] == '&') cout << (a & b);
 	if (op[0] == '|') cout << (a | b);
 	if (op[0] == '^') cout << (a ^ b);
-    if (op[0] == '<' && op[1] == '<') cout << (a << b);
+    	if (op[0] == '<' && op[1] == '<') cout << (a << b);
 	if (op[0] == '>' && op[1] == '>') cout << (a >> b);
     
     return 0;
